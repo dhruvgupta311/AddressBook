@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Contact {
     String firstName;
     String lastName;
@@ -17,5 +19,16 @@ public class Contact {
         this.zip = zip;
     }
 
-
+    @Override
+    public String toString() {
+        return "Contact{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", city='" + city + '\'' +
+                ", state='" + state + '\'' +
+                ", mail='" + mail + '\'' +
+                ", phone=" + phone +
+                ", zip=" + zip +
+                '}';
+    }
 }
