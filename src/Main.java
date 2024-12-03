@@ -1,4 +1,3 @@
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -6,20 +5,25 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         AdressBook a1=new AdressBook();
+        LinkedListDemo<BussinessContact> obj = new LinkedListDemo<>();
         Scanner sc=new Scanner(System.in);
         int i=1;
         System.out.println("Welcome");
         do{
             System.out.println("Enter 1 to create contact");
             System.out.println("Enter 2 to display contact");
+            System.out.println("Enter 3 to add all adbooklist to linked list ");
+            System.out.println("Enter 4 to display Linked List");
             int input=sc.nextInt();
             switch(input){
                 case 1-> a1.addContact(createBussinessContact());
                 case 2-> a1.display();
+                case 3-> obj.migrate(a1);
+                case 4-> obj.printMigratedList();
                 default -> System.out.println("Wrong");
             }
 
-            System.out.println("Enter 0 to exit");
+            System.out.println("Enter 0 to exit");2
             i=sc.nextInt();
         }while(i!=0);
         System.out.println("Thank you");
