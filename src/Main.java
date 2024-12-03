@@ -22,8 +22,7 @@ public class Main {
                 case 4-> obj.printMigratedList();
                 default -> System.out.println("Wrong");
             }
-
-            System.out.println("Enter 0 to exit");2
+            System.out.println("Enter 0 to exit");
             i=sc.nextInt();
         }while(i!=0);
         System.out.println("Thank you");
