@@ -15,11 +15,11 @@ public class Main {
             System.out.println("Enter 3 to add all adbooklist to linked list ");
             System.out.println("Enter 4 to display Linked List");
             int input=sc.nextInt();
-            switch(input){
-                case 1-> a1.addContact(createBussinessContact());
-                case 2-> a1.display();
-                case 3-> obj.migrate(a1);
-                case 4-> obj.printMigratedList();
+            switch(input) {
+                case 1 -> a1.addContact(createBussinessContact());
+                case 2 -> a1.display();
+                case 3 -> obj.migrate(a1);
+                case 4 -> obj.printMigratedList();
                 default -> System.out.println("Wrong");
             }
             System.out.println("Enter 0 to exit");
